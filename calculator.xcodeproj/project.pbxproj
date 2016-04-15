@@ -14,6 +14,8 @@
 		4AE784AB1CBFF73300DA0F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE784A91CBFF73300DA0F95 /* LaunchScreen.storyboard */; };
 		4AE784B61CBFF73300DA0F95 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE784B51CBFF73300DA0F95 /* calculatorTests.swift */; };
 		4AE784C11CBFF73300DA0F95 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE784C01CBFF73300DA0F95 /* calculatorUITests.swift */; };
+		4AE784D31CC0989900DA0F95 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE784D21CC0989800DA0F95 /* Minecraft.ttf */; };
+		4AE784D51CC0CC2500DA0F95 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AE784D41CC0CC2500DA0F95 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4AE784BC1CBFF73300DA0F95 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE784C01CBFF73300DA0F95 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		4AE784C21CBFF73300DA0F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE784D21CC0989800DA0F95 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Minecraft.ttf; path = ../ux/Minecraft.ttf; sourceTree = "<group>"; };
+		4AE784D41CC0CC2500DA0F95 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,10 @@
 		4AE7849F1CBFF73300DA0F95 /* calculator */ = {
 			isa = PBXGroup;
 			children = (
-				4AE784A01CBFF73300DA0F95 /* AppDelegate.swift */,
-				4AE784A21CBFF73300DA0F95 /* ViewController.swift */,
-				4AE784A41CBFF73300DA0F95 /* Main.storyboard */,
-				4AE784A71CBFF73300DA0F95 /* Assets.xcassets */,
-				4AE784A91CBFF73300DA0F95 /* LaunchScreen.storyboard */,
-				4AE784AC1CBFF73300DA0F95 /* Info.plist */,
+				4AE784D11CBFF74800DA0F95 /* Model */,
+				4AE784D01CBFF74400DA0F95 /* View */,
+				4AE784CF1CBFF74000DA0F95 /* Controller */,
+				4AE784CE1CBFF73B00DA0F95 /* Utilities */,
 			);
 			path = calculator;
 			sourceTree = "<group>";
@@ -123,6 +125,42 @@
 				4AE784C21CBFF73300DA0F95 /* Info.plist */,
 			);
 			path = calculatorUITests;
+			sourceTree = "<group>";
+		};
+		4AE784CE1CBFF73B00DA0F95 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4AE784A01CBFF73300DA0F95 /* AppDelegate.swift */,
+				4AE784AC1CBFF73300DA0F95 /* Info.plist */,
+				4AE784D21CC0989800DA0F95 /* Minecraft.ttf */,
+				4AE784D41CC0CC2500DA0F95 /* btn.wav */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		4AE784CF1CBFF74000DA0F95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4AE784A21CBFF73300DA0F95 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4AE784D01CBFF74400DA0F95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AE784A41CBFF73300DA0F95 /* Main.storyboard */,
+				4AE784A91CBFF73300DA0F95 /* LaunchScreen.storyboard */,
+				4AE784A71CBFF73300DA0F95 /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4AE784D11CBFF74800DA0F95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE784D51CC0CC2500DA0F95 /* btn.wav in Resources */,
 				4AE784AB1CBFF73300DA0F95 /* LaunchScreen.storyboard in Resources */,
 				4AE784A81CBFF73300DA0F95 /* Assets.xcassets in Resources */,
+				4AE784D31CC0989900DA0F95 /* Minecraft.ttf in Resources */,
 				4AE784A61CBFF73300DA0F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
